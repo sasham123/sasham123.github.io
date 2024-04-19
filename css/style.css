@@ -1,3 +1,205 @@
- /* This is a comment! */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@900&display=swap'); 
+
+ body {
+    color: #222;
+    font-family: "Roboto" , "Helvetica" , "Arial" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "header  header"
+        "nav     main"
+        "footer  footer";
+
+    margin: 0 auto;
+    max-width: 960px;
+ }
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab" , "Helvetica" , "Arial" , sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+caption {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+figcaption {
+    font-size: 15px;
+    font-style: italic;
+ }
+
+a,
+a:link {
+    color: #850404; 
+}
+
+a:visited {
+    color: #d92c30;
+}
+
+a:hover {
+    color: rgb(247, 74, 55);
+}
+
+a:active {
+    color: rgb(255, 128, 114);
+}
+
+ p {
+    line-height: 1.35;
+}
+
+header {
+    grid-area: header;
+}
+
+header h1 {
+    margin-left: 28px;
+}
+
+nav { 
+    grid-area: nav;
+}
+
+nav ul {
+    margin-top: 25px;
+    line-height: 2;
+}
+
+main {
+   grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    grid-template-areas: 
+        "intro"
+        "flag"
+        "people-society"
+        "barcelona"
+        "environment"
+        "spain-economy"
+        "alcala"
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p {
+    margin-top: 20px;
+}
+
+section h3 {
+    padding-top: 15px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+ 
+header {
+    background-color: #ff9495;
+}
+
+ nav {
+    background-color: #ffcdce;
+ }
+
+ footer {
+    background-color: #eee;
+ }
+
+ section {
+    background-color: #ddd;
+ }
+
+ #intro {
+    grid-area: intro;
+
+ }
+
+ #flag {
+    grid-area: flag;
+ }
+
+ #people-society {
+    grid-area: people-society;
+ }
+
+ #barcelona {
+    grid-area: barcelona;
+}
+
+ #environment {
+    grid-area: environment;
+ }
+
+ #economy {
+    grid-area: spain-economy;
+ }
+
+ #alcala {
+    grid-area: alcala;
+ }
+
+ #alcala-pic {
+    border: 2px solid #222;
+ }
+
+ #spain-flag {
+   text-align: center;
+ }
+
+ #flag-pic {
+    border: 2px solid #222;
+ }
+
+ #barcelona {
+    text-align: center;
+ }
+
+ #barcelona-pic {
+    border: 2px solid #222;
+ }
+
+ #alcala {
+    text-align: center;
+ }
+
+ th{
+    border: .5px solid #222;
+    background-color: #ffcdce;  
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 2;
+ }
+
+ td {
+    text-align: center;
+ }
+
+ li{
+    line-height: 1.5;
+ }
 
  
