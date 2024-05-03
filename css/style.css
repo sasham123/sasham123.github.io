@@ -1,205 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
- body {
+/*Fonts*/
+
+h1,
+h2,
+h3 {
     color: #222;
-    font-family: "Roboto" , "Helvetica" , "Arial" , sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-family: "Ubuntu Sans", "Helvetica" , "Arial" , sans-serif;
+}
 
+main {
+    color: #222;
+    font-family: "Reddit Sans" , "Helvetica" , "Arial" , sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    font-family: "Reddit Sans" , "Helvetica" , "Arial" , sans-serif;
+    font-size: 18px;
+}
+
+/*Grid*/
+
+body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     grid-template-areas: 
         "header  header"
-        "nav     main"
-        "footer  footer";
-
-    margin: 0 auto;
-    max-width: 960px;
- }
-
-h1,
-h2,
-h3 {
-    font-family: "Roboto Slab" , "Helvetica" , "Arial" , sans-serif;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-caption {
-    font-size: 17px;
-    font-weight: bold;
-}
-
-figcaption {
-    font-size: 15px;
-    font-style: italic;
- }
-
-a,
-a:link {
-    color: #850404; 
-}
-
-a:visited {
-    color: #d92c30;
-}
-
-a:hover {
-    color: rgb(247, 74, 55);
-}
-
-a:active {
-    color: rgb(255, 128, 114);
-}
-
- p {
-    line-height: 1.35;
+        "nav     main";
 }
 
 header {
     grid-area: header;
 }
 
-header h1 {
-    margin-left: 28px;
-}
-
-nav { 
+nav {
     grid-area: nav;
 }
+
+main {
+    grid-area: main;
+}
+
+/*Background color*/
+
+nav {
+    background-color: rgb(255, 160, 189);
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+header {
+    background-color: rgb(255, 205, 220);
+    width: auto;
+    overflow: auto;
+    height: 85px;
+    margin-left: 15px;
+}
+
+/*Links*/
+
+a,
+a:link {
+    color: rgb(85, 87, 95)
+}
+
+a:hover {
+    color: rgb(255, 255, 255)
+}
+
+a:active {
+    color: rgb(58, 60, 70)
+}
+
+a:visited {
+    color: rgb(0, 21, 124)
+}
+
+/*Positioning*/
 
 nav ul {
     margin-top: 25px;
     line-height: 2;
 }
 
-main {
-   grid-area: main;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-    grid-template-areas: 
-        "intro"
-        "flag"
-        "people-society"
-        "barcelona"
-        "environment"
-        "spain-economy"
-        "alcala"
+nav {
+    margin-left: 15px;
 }
 
-section {
-    padding: 20px;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-section p {
-    margin-top: 20px;
-}
-
-section h3 {
-    padding-top: 15px;
-}
-
-footer {
-    grid-area: footer;
-}
-
-footer p {
-    margin-left: 20px;
-}
-
- 
 header {
-    background-color: #ff9495;
+    padding-left: 25px;
 }
 
- nav {
-    background-color: #ffcdce;
- }
-
- footer {
-    background-color: #eee;
- }
-
- section {
-    background-color: #ddd;
- }
-
- #intro {
-    grid-area: intro;
-
- }
-
- #flag {
-    grid-area: flag;
- }
-
- #people-society {
-    grid-area: people-society;
- }
-
- #barcelona {
-    grid-area: barcelona;
+#pizza-pic {
+    margin-left: 17px;
+    margin-bottom: 25px;
 }
 
- #environment {
-    grid-area: environment;
- }
+#pancake-pic {
+    margin-right: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 
- #economy {
-    grid-area: spain-economy;
- }
+#pasta-pic {
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 
- #alcala {
-    grid-area: alcala;
- }
+p {
+    text-align: left;
+    word-spacing: 1px;
+}
 
- #alcala-pic {
-    border: 2px solid #222;
- }
+#intro-one {
+    margin-right: 230px;
+}
 
- #spain-flag {
-   text-align: center;
- }
+#intro-two {
+    margin-right: 230px;
 
- #flag-pic {
-    border: 2px solid #222;
- }
+}
 
- #barcelona {
-    text-align: center;
- }
+h2 {
+    margin-left: 180px;
+    margin-right: 180px;
+}
 
- #barcelona-pic {
-    border: 2px solid #222;
- }
+#omelette-pic {
+    margin-left: 50px;
+}
 
- #alcala {
-    text-align: center;
- }
+#avo-toast-pic {
+    margin-left: 45px;
+}
 
- th{
-    border: .5px solid #222;
-    background-color: #ffcdce;  
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 2;
- }
+#breakfast-two {
+    margin-top: 75px;
+}
 
- td {
-    text-align: center;
- }
+#blt-pic {
+    margin-left: 115px;
+}
 
- li{
-    line-height: 1.5;
- }
+#lunch-two {
+    margin-top: 75px;
+    margin-left: 35px;
+}
 
- 
+#greek-pic {
+    margin-right: 145px;
+}
+
+#recipe-one {
+    margin-top: 35px;
+}
+
+#recipe-two {
+    margin-top: 35px;
+}
+
+#recipe-three {
+    margin-top: 35px;
+}
+
+#recipe-four {
+    margin-top: 35px;
+}
+
+#recipe-five {
+    margin-top: 35px;
+}
+
+#recipe-six {
+    margin-top: 35px;
+}
+
+#chicken-pic {
+    margin-left: 70px;
+}
+
+#burrito-bowl-pic {
+    margin-right: 50px;
+}
+
+#dinner-two {
+    margin-top: 75px;
+    margin-left: 25px;
+}
+
+#dinner-one {
+    margin-right: 25px;
+}
+
+ol {
+    line-height: 28px;
+}
+
+ul {
+    line-height: 25px;
+}
+
+
+
+
+
